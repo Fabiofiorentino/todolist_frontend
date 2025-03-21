@@ -27,7 +27,8 @@ npm install
 # ou
 yarn install
 
-### 🔐 Autenticação
+
+## 🔐 Autenticação
 A autenticação é baseada em JWT. Após o login bem-sucedido, um token é armazenado no localStorage, permitindo acesso às rotas protegidas.
 
 Rotas públicas: /login, /register
