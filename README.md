@@ -12,6 +12,24 @@ Este é o frontend de um sistema de gerenciamento de tarefas, desenvolvido com *
 
 ---
 
-## 📂 Estrutura do Projeto
+---
 
-/src ├── app │ ├── layout.tsx # Layout base da aplicação │ ├── login/page.tsx # Página de login │ ├── register/page.tsx # Página de registro │ ├── tasks/page.tsx # Página principal de tarefas │ ├── components │ ├── Navbar.tsx # Barra de navegação dinâmica │ ├── FormComponent.tsx # Formulário reutilizável para login e registro │ ├── services │ ├── authService.ts # Serviço de autenticação │ ├── styles │ ├── globals.css # Estilos globais
+## 🛠️ Como Executar o Projeto
+
+### 1️⃣ Clone o repositório
+```sh
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+
+### 2️⃣ Instale as dependências
+
+npm install
+# ou
+yarn install
+
+### 🔐 Autenticação
+A autenticação é baseada em JWT. Após o login bem-sucedido, um token é armazenado no localStorage, permitindo acesso às rotas protegidas.
+
+Rotas públicas: /login, /register
+Rotas protegidas: /tasks
+
